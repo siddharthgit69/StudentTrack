@@ -3,12 +3,14 @@ package src;
 
 public class Main {
     public static void main(String[] args) {
-        Student student1 = new Student(
-            "ST101",
-            "Aarav",
-            "A"
+        Student s1 = new Student(
+            "Java",
+            "A2",
+            3214
         );
+        Student s2 = new Student("DAA","A2",124);
 
-        student1.displayDetails();
+        s1.display();
+        s2.display();
     }
 }

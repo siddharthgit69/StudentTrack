@@ -1,32 +1,30 @@
-
 package src;
 
-public class Student {
-    private String studentId;
+public class Student{
     private String name;
-    private String section;
+    private String class_name;
+    private int id;
 
-    public Student(String studentId, String name, String section) {
-        this.studentId = studentId;
+    public Student(String name , String class_name , int id){
         this.name = name;
-        this.section = section;
+        this.class_name = class_name;
+        this.id = id;
     }
 
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public String getName() {
+    public String getstudentname(){
         return name;
     }
-
-    public String getSection() {
-        return section;
+    public String getstudentclass(){
+        return class_name;
+    }
+    public int getstudentid(){
+        return id;
     }
 
-    public void displayDetails() {
-        System.out.println("Student ID: " + studentId);
-        System.out.println("Name: " + name);
-        System.out.println("Section: " + section);
+    void display(){
+        System.out.println("Studend ID: "+id);
+        System.out.println("Student Name: "+name);
+        System.out.println("Student Class: "+class_name);
     }
 }
+
