@@ -9,10 +9,19 @@ public class Main {
         students.add(new Student("Aman" , "B1" , 2214));
         students.add(new Student("Pranav" , "B8" , 2256));
 
-        for (Student student : students) {
-            student.display();
-            System.out.println("----------------");
+        int searchid = 2256;
+        boolean found = false;
 
+        for (Student student : students) {
+            if (student.getstudentid() == searchid) {
+                student.display();
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("Student not found.");
+        }
     }
-}
 }
