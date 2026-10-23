@@ -1,16 +1,18 @@
 
 package src;
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        Student s1 = new Student(
-            "Java",
-            "A2",
-            3214
-        );
-        Student s2 = new Student("DAA","A2",124);
+       ArrayList<Student> students = new ArrayList<>();
 
-        s1.display();
-        s2.display();
+        students.add(new Student("Rahul" , "A2" , 3156));
+        students.add(new Student("Aman" , "B1" , 2214));
+        students.add(new Student("Pranav" , "B8" , 2256));
+
+        for (Student student : students) {
+            student.display();
+            System.out.println("----------------");
+
     }
+}
 }
