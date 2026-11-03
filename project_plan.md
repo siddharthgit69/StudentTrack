@@ -1,38 +1,118 @@
-# StudentTrack — Project Plan
+# StudentTrack – Team Work Division
 
-## Project Title
-Student Attendance and Academic Performance Management System
+## Project Overview
+**Project Title:** Student Attendance and Academic Performance Management System  
+**Project Name:** StudentTrack  
+**Language:** Java  
+**Interface:** Java Swing (Desktop Application)  
+**Storage:** Local File Handling  
 
-## Objective
-To develop a Java desktop application that manages student records, tracks attendance, records academic marks, and generates performance reports.
+The application will manage student records, attendance, marks and academic performance through a single desktop application.
 
-## Technologies
-- Java
-- Java Swing (Graphical User Interface)
-- File Handling or a suitable local database
-- Git and GitHub
+---
 
-## Planned Features
-1. Add, edit, search, view, and delete student records.
-2. Record daily attendance.
-3. Calculate attendance percentages and identify low attendance.
-4. Enter marks and calculate grades.
-5. Generate student performance summaries.
-6. Save and load records.
+## PART 1 – Member 1: Student Management (Siddharth)
 
-## Team Responsibilities
-- Member 1: Student Management
-- Member 2: Attendance Management
-- Member 3: Marks and Performance
-- Member 4: GUI, Integration, and Data Storage
+**Responsibility:** Manage student information and records.
 
-## Development Plan
-1. Design the project and define requirements.
-2. Develop the core Java modules.
-3. Build the graphical interface.
-4. Integrate data storage and all modules.
-5. Test the application and fix bugs.
-6. Complete documentation and prepare for the PBL exhibition.
+**Tasks:**
+1. Create and maintain the `Student` class.
+2. Add students using `ArrayList`.
+3. Search students using their ID.
+4. Display all student records.
+5. Update student details.
+6. Delete student records.
+7. Prevent duplicate student IDs.
+8. Validate user input.
 
-## Exhibition Date
-12 November 2026
+**Suggested Files:**
+- `Student.java`
+- `StudentManager.java`
+
+**Expected Result:** A functional student management module supporting Add, Search, Display, Update and Delete operations.
+
+---
+
+## PART 2 – Member 2: Attendance Management
+
+**Responsibility:** Develop the student attendance module.
+
+**Tasks:**
+1. Record attendance using student ID.
+2. Mark students as Present or Absent.
+3. Store attendance dates.
+4. Display individual attendance records.
+5. Calculate total present and absent days.
+6. Calculate attendance percentage.
+7. Prevent duplicate attendance entries for the same student on the same date.
+
+**Suggested Files:**
+- `AttendanceRecord.java`
+- `AttendanceManager.java`
+
+**Expected Result:** A functional attendance module that records and calculates student attendance.
+
+---
+
+## PART 3 – Member 3: Marks and Academic Performance
+
+**Responsibility:** Develop the marks and grading module.
+
+**Tasks:**
+1. Enter marks for different subjects.
+2. Associate marks with student IDs.
+3. Display subject-wise marks.
+4. Calculate total marks and average percentage.
+5. Assign grades based on an agreed grading system.
+6. Validate marks to prevent invalid entries.
+7. Display individual student performance.
+
+**Suggested Files:**
+- `SubjectMarks.java`
+- `PerformanceManager.java`
+
+**Expected Result:** A functional academic performance module that calculates marks, percentages and grades.
+
+---
+
+## PART 4 – Member 4: GUI, File Handling and Integration
+
+**Responsibility:** Develop the desktop interface and integrate all modules.
+
+**Tasks:**
+1. Create the desktop GUI using Java Swing.
+2. Design the main application window.
+3. Add navigation for Student Management, Attendance and Marks.
+4. Connect the GUI to the other members' modules.
+5. Implement file handling to save student, attendance and marks records.
+6. Load previously saved records when the application starts.
+7. Test the complete application and fix integration issues.
+
+**Suggested Files:**
+- `MainFrame.java`
+- `FileManager.java`
+- `Main.java` (final application entry point)
+
+**Expected Result:** A working desktop application with an integrated GUI and persistent data storage.
+
+---
+
+## Team Coordination and GitHub Rules
+
+1. Each member is responsible for developing and testing their assigned module.
+2. Commit and push changes regularly.
+3. Avoid editing another member's files without coordination.
+4. Inform the team before changing shared class names, fields or method signatures.
+5. All modules must be integrated and tested before the final demonstration.
+6. Every member must understand their contribution and be able to explain it during evaluation.
+
+## Development Order
+
+1. Complete individual Java modules.
+2. Integrate student, attendance and performance modules.
+3. Implement file storage.
+4. Connect all modules to the Swing GUI.
+5. Perform testing and debugging.
+6. Complete documentation and prepare the final demonstration.
+
+**Note:** All members are expected to contribute working Java code, test their modules and understand the overall project.
