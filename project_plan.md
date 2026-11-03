@@ -33,7 +33,7 @@ The application will manage student records, attendance, marks and academic perf
 
 ---
 
-## PART 2 – Member 2: Attendance Management
+## PART 2 – Member 2: Attendance Management (Jashveer)
 
 **Responsibility:** Develop the student attendance module.
 
