@@ -1,8 +1,5 @@
-
 package src;
-
 public class Student {
-
     private String name;
     private String class_name;
     private int id;

@@ -1,13 +1,8 @@
-
 package src;
-
 import java.util.ArrayList;
-
 public class StudentManager {
-
     private ArrayList<Student> students = new ArrayList<>();
 
-    // Add Student
     public void addStudent(Student student) {
 
         if (searchStudent(student.getstudentid()) != null) {
@@ -19,7 +14,6 @@ public class StudentManager {
         System.out.println("Student added successfully!");
     }
 
-    // Display All Students
     public void displayStudents() {
 
         if (students.isEmpty()) {
@@ -35,7 +29,6 @@ public class StudentManager {
         }
     }
 
-    // Search Student
     public Student searchStudent(int id) {
 
         for (Student student : students) {
@@ -48,7 +41,6 @@ public class StudentManager {
         return null;
     }
 
-    // Remove Student
     public void removeStudent(int id) {
 
         Student student = searchStudent(id);
