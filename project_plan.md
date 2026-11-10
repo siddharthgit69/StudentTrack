@@ -54,7 +54,7 @@ The application will manage student records, attendance, marks and academic perf
 
 ---
 
-## PART 3 – Member 3: Marks and Academic Performance
+## PART 3 – Member 3: Marks and Academic Performance(Jivitesh)
 
 **Responsibility:** Develop the marks and grading module.
 
@@ -75,7 +75,7 @@ The application will manage student records, attendance, marks and academic perf
 
 ---
 
-## PART 4 – Member 4: GUI, File Handling and Integration
+## PART 4 – Member 4: GUI, File Handling and Integration(BODA)
 
 **Responsibility:** Develop the desktop interface and integrate all modules.
 
