@@ -2,8 +2,7 @@ package src;
 import java.util.ArrayList;
 public class StudentManager {
     private ArrayList<Student> students = new ArrayList<>();
-
-    void addStudent(Student student) {
+    public void addStudent(Student student) {
         students.add(student);
         System.out.println("Student added successfully!");
     }
@@ -20,5 +19,17 @@ public class StudentManager {
         for (Student student : students) {
             student.display();
         }
+    }
+
+    public Student searchStudent(int id) {
+
+        for (Student student : students) {
+
+            if (student.getstudentid() == id) {
+                return student;
+            }
+        }
+
+        return null;
     }
 }
