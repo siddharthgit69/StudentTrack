@@ -1,8 +1,5 @@
-
 package src;
-
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -14,18 +11,35 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("\n===== Student Search System =====");
-        System.out.print("Enter Student ID to search: ");
+        System.out.println("\n===== Student Management System =====");
+        System.out.println("1. Display All Students");
+        System.out.println("2. Search Student by ID");
 
-        int searchId = sc.nextInt();
+        System.out.print("\nEnter your choice: ");
+        int choice = sc.nextInt();
 
-        Student result = manager.searchStudent(searchId);
+        switch (choice) {
 
-        if (result != null) {
-            System.out.println("\nStudent Found!");
-            result.display();
-        } else {
-            System.out.println("\nStudent not found.");
+            case 1:
+                manager.displayStudents();
+                break;
+
+            case 2:
+                System.out.print("Enter Student ID: ");
+                int searchId = sc.nextInt();
+
+                Student result = manager.searchStudent(searchId);
+
+                if (result != null) {
+                    System.out.println("\nStudent Found!");
+                    result.display();
+                } else {
+                    System.out.println("\nStudent not found.");
+                }
+                break;
+
+            default:
+                System.out.println("Invalid choice.");
         }
 
         sc.close();

@@ -1,8 +1,14 @@
+
 package src;
+
 import java.util.ArrayList;
+
 public class StudentManager {
+
     private ArrayList<Student> students = new ArrayList<>();
+
     public void addStudent(Student student) {
+
         students.add(student);
         System.out.println("Student added successfully!");
     }
@@ -14,10 +20,11 @@ public class StudentManager {
             return;
         }
 
-        System.out.println("===== Student Records =====");
+        System.out.println("\n===== Student Records =====");
 
         for (Student student : students) {
             student.display();
+            System.out.println("--------------------");
         }
     }
 
