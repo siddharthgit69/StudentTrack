@@ -24,7 +24,6 @@ public class Student {
     public void setstudentclass(String class_name) {
         this.class_name = class_name;
     }
-
     public void display() {
         System.out.println("Student ID: " + id);
         System.out.println("Student Name: " + name);

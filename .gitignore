@@ -1,16 +1,14 @@
-# Compiled class file
+
+# Java compiled files
 *.class
+**/out/
 
-# Log file
+# Log files
 *.log
+hs_err_pid*
+replay_pid*
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Java package files
 *.jar
 *.war
 *.nar
@@ -19,6 +17,15 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Packaging and distribution
+**/dist/
+**/package-input/
+**/StudentTrack_Windows/
+
+# Student records
+**/students.txt
+**/attendance.txt
+**/marks.txt
+
+# IDE files
+.idea/
